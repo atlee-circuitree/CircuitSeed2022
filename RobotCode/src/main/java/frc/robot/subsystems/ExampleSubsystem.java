@@ -4,11 +4,20 @@
 
 package frc.robot.subsystems;
 
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class ExampleSubsystem extends SubsystemBase {
+  private DifferentialDrive drive;
+  
+  
   /** Creates a new ExampleSubsystem. */
   public ExampleSubsystem() {}
+
+  public void tankDrive(double speed, double rotation){
+    drive.arcadeDrive(speed, rotation);
+  }
+
 
   @Override
   public void periodic() {
