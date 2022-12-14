@@ -28,8 +28,8 @@ public class RobotContainer {
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
 
-driveCommand.addRequirements(m_exampleSubsystem);
-m_exampleSubsystem.setDefaultCommand(driveCommand);
+    driveCommand.addRequirements(m_exampleSubsystem);
+    m_exampleSubsystem.setDefaultCommand(driveCommand);
 
     // Configure the button bindings
     configureButtonBindings();
